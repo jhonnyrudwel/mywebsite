@@ -18,3 +18,13 @@ body {
         background-attachment: scroll;
     }
 }
+
+@media print {
+    body {
+        background: url('background.jpg') no-repeat center center;
+        background-size: contain;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        height: 100vh;
+    }
+}
